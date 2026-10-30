@@ -194,7 +194,8 @@ footer{background:var(--navy-ink);color:rgba(247,243,236,.7);padding-block:56px 
 footer .top{display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between;align-items:center;padding-bottom:32px;border-bottom:1px solid var(--line-lt)}
 footer .wordmark{font-size:28px;color:var(--ivory)}
 footer .meta{display:flex;flex-wrap:wrap;gap:8px 28px;font-size:12px;letter-spacing:.12em;text-transform:uppercase}
-footer .meta a:hover{color:var(--brass-lt)}
+footer .meta a{text-transform:none;letter-spacing:.06em}
+footer .meta a:hover,.book-card .contact a:hover{color:var(--brass-lt)}
 footer small{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;margin-top:24px;font-size:12px}
 
 /* reveal on scroll */
@@ -356,8 +357,8 @@ footer small{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;m
           <span class="eyebrow">Bóka mátun</span>
           <h2>Tilbúinn í <em>fyrstu mátunina?</em></h2>
           <p>Bókaðu tíma og við tökum málin í höndunum, ekki með forriti.</p>
-          <div><a class="btn" href="mailto:[TÖLVUPÓSTUR]">Bóka mátun <span class="arr" aria-hidden="true">→</span></a></div>
-          <div class="contact"><span>[TÖLVUPÓSTUR]</span><span>[SÍMANÚMER]</span><span>Reykjavík</span></div>
+          <div><a class="btn" href="mailto:suit@almarisuit.app?subject=B%C3%B3ka%20m%C3%A1tun">Bóka mátun <span class="arr" aria-hidden="true">→</span></a></div>
+          <div class="contact"><a href="mailto:suit@almarisuit.app">suit@almarisuit.app</a><a href="tel:+3545541505">554 1505</a><span>Reykjavík</span></div>
         </div>
         <div class="side">
           <h3>Við fyrstu mátun</h3>
@@ -376,7 +377,7 @@ footer small{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;m
   <div class="wrap">
     <div class="top">
       <span class="wordmark">Almari</span>
-      <div class="meta"><span>[TÖLVUPÓSTUR]</span><span>[SÍMANÚMER]</span><span>[INSTAGRAM]</span></div>
+      <div class="meta"><a href="mailto:suit@almarisuit.app">suit@almarisuit.app</a><a href="tel:+3545541505">554 1505</a><span>[INSTAGRAM]</span></div>
     </div>
     <small><span>© 2026 Almari</span><span>Handverk frá Lahore – mælt í Reykjavík</span></small>
   </div>
