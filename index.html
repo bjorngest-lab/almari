@@ -26,6 +26,8 @@ a{color:inherit;text-decoration:none}
 p{margin:0}
 .wrap{max-width:1240px;margin:0 auto;padding-inline:clamp(16px,4vw,56px)}
 :focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+/* separators that only show up in copied text and screen readers */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
 .eyebrow{display:inline-flex;align-items:center;gap:14px;font-size:11px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;color:var(--walnut)}
 .eyebrow::before{content:"";width:28px;height:1px;background:currentColor}
@@ -231,9 +233,9 @@ footer small{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;m
           <a class="btn" href="#ferlid">Skoða ferlið</a>
         </div>
         <div class="proof">
-          <div><b>Nákvæm mál</b><span>tekin með hefðbundnum aðferðum</span></div>
-          <div><b>Handunnið</b><span>af klæðskerum í Lahore</span></div>
-          <div><b>Stofnendurnir sjálfir</b><span>við hverja mátun</span></div>
+          <div><b>Nákvæm mál</b><span class="sr">, </span><span>tekin með hefðbundnum aðferðum</span></div>
+          <div><b>Handunnið</b><span class="sr">, </span><span>af klæðskerum í Lahore</span></div>
+          <div><b>Stofnendurnir sjálfir</b><span class="sr">, </span><span>við hverja mátun</span></div>
         </div>
       </div>
       <figure class="hero-figure rv">
@@ -258,10 +260,10 @@ footer small{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;m
         <p>Fjögur skref, tvær borgir. Þú hittir okkur í Reykjavík, flíkin er saumuð í Lahore og þú sækir hana aftur til okkar.</p>
       </div>
       <div class="route">
-        <div class="stop rv"><span class="dot">I</span><span class="place">Reykjavík</span><h3>Bóka tíma</h3><p>Þú bókar mátun hjá okkur í Reykjavík, hvenær sem þér hentar.</p></div>
-        <div class="stop rv"><span class="dot">II</span><span class="place">Reykjavík</span><h3>Mátun og mæling</h3><p>Við mælum þig nákvæmlega fyrir jakka, buxur, vesti eða skyrtu og förum yfir efni, fóður og tölur.</p></div>
-        <div class="stop away rv"><span class="dot">III</span><span class="place">Lahore</span><h3>Saumað</h3><p>Klæðskerar í Lahore sauma flíkina þína í höndunum, eftir þínum málum.</p></div>
-        <div class="stop rv"><span class="dot">IV</span><span class="place">Reykjavík</span><h3>Afhending</h3><p>Þú sækir svo tilbúna flík til okkar í Reykjavík, fullkomlega sniðna að þér.</p></div>
+        <div class="stop rv"><span class="dot">I</span><span class="sr"> · </span><span class="place">Reykjavík</span><h3>Bóka tíma</h3><p>Þú bókar mátun hjá okkur í Reykjavík, hvenær sem þér hentar.</p></div>
+        <div class="stop rv"><span class="dot">II</span><span class="sr"> · </span><span class="place">Reykjavík</span><h3>Mátun og mæling</h3><p>Við mælum þig nákvæmlega fyrir jakka, buxur, vesti eða skyrtu og förum yfir efni, fóður og tölur.</p></div>
+        <div class="stop away rv"><span class="dot">III</span><span class="sr"> · </span><span class="place">Lahore</span><h3>Saumað</h3><p>Klæðskerar í Lahore sauma flíkina þína í höndunum, eftir þínum málum.</p></div>
+        <div class="stop rv"><span class="dot">IV</span><span class="sr"> · </span><span class="place">Reykjavík</span><h3>Afhending</h3><p>Þú sækir svo tilbúna flík til okkar í Reykjavík, fullkomlega sniðna að þér.</p></div>
       </div>
     </div>
   </section>
